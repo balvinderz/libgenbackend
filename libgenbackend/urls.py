@@ -18,5 +18,7 @@ from django.urls import path
 from libgen import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('search/', views.search, name='search')
-]
+    path('search', views.search, name='search'),
+    path('description',views.description,name='description'),
+    path('download',views.download,name='download')
+]  
